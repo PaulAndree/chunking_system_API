@@ -56,3 +56,9 @@ response = requests.post(
 chunks_doc = response.json()
 chunks_doc[0]
 ```
+
+
+Find the docker image at :
+
+docker pull paulbarreda9/chunking-api:latest
+
