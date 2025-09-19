@@ -3,6 +3,23 @@
 
 Esta API desarrollada con FastApi busca exponer un endpoint "/process_doc" el cual es capaz de procesar un archivo (pdf, docx, txt) y segmentarlo semanticamente, devolviendo una lista de chunks. Los parametros posibles a configurar para la segmentacion son los siguientes:
 
+```python
+splitter_pdf = RollingWindowSplitter(
+    encoder=encoder,
+    dynamic_threshold=True,
+    min_split_tokens=150,
+    max_split_tokens=300,
+    window_size=5,
+    plot_splits=False,  # set this to true to visualize chunking
+    enable_statistics=False  # to print chunking stats
+)
+```
+
+🔹 min_split_tokens define el tamaño mínimo de un chunk en tokens.
+🔹 max_split_tokens Define el tamaño máximo del chunk antes de forzar un corte.
+🔹 window_size  Controla el overlap semántico entre chunks.
+🔹 dynamic_threshold  Esto ajusta dinámicamente los cortes según la coherencia semántica detectada por el encoder.
+
 
 El código para esta ingesta se basa fundamentalmente en [MinerU](https://github.com/opendatalab/MinerU) y [semantic-router](https://pypi.org/project/semantic-router/).  
 MinerU es una herramienta de código abierto desarrollada por OpenDataLab, diseñada para facilitar el análisis y procesamiento de documentos complejos, como artículos académicos, informes técnicos y libros de texto y llevarlos a formatos estructurados como Markdown y JSON. Sus principales caracteristicas y uso son:
