@@ -59,8 +59,9 @@ chunks = response.json()
 
 ```python
  # for doc
+
 response = requests.post(
-    "http://localhost:8071/process_doc",
+    url,
     files={"file": open( "/home/peyzaguirre/notebooks/dev_chunking_system/Carta.docx", "rb")},
     data={"type_name": "doc","output_dir":"/home/peyzaguirre/notebooks/dev_chunking_system/output", "language":"es"}
 )
