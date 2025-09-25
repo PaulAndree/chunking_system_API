@@ -1,7 +1,7 @@
 # chunking_system_API
 
 
-Esta API desarrollada con FastApi busca exponer un endpoint "/process_doc" el cual es capaz de procesar un archivo (pdf, docx, txt) y segmentarlo semanticamente, devolviendo una lista de chunks. Los parametros posibles a configurar para la segmentacion son los siguientes:
+Esta API desarrollada con FastApi expone un endpoint "/process_doc" el cual es capaz de procesar un archivo (pdf, docx, txt) y segmentarlo semanticamente, devolviendo una lista de chunks. Los parametros posibles a configurar para la segmentacion son los siguientes:
 
 ```python
 splitter_pdf = RollingWindowSplitter(
