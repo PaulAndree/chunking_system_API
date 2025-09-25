@@ -29,6 +29,8 @@ Por otro lado semantic-router es usado para implementar directamente la segmenta
 Ejemplo para llamar a la API:
 
 ```python
+ # for txt
+
 import requests
 url = "http://localhost:8071/process_doc"
 
