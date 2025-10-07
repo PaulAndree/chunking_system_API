@@ -139,6 +139,7 @@ Interpretación:  mide cuántos de los tokens relevantes fueron efectivamente re
 
 ## Resultados
 
+El experimento1 se enfoca en evaluar los parámetros de configuración estandar, mientras que el experimento2 además incorpora un pasa adicional donde primero divide un documento por titulos y continúa con la división semántica. Se observa que este último experimento mejora la recuperación a consultas. 
 
 <p align="center">
   <img src="IOU.png" alt="Gráfico IoU" width="500">
