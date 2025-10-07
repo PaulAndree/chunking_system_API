@@ -108,6 +108,11 @@ La metrica Intersección sobre Unión (IoU) es una métrica que considera no sol
   IoU<sub>q</sub>(𝐂) = |t<sub>e</sub> ∩ t<sub>r</sub>| / (|t<sub>e</sub>| + |t<sub>r</sub>| − |t<sub>e</sub> ∩ t<sub>r</sub>|)
 </p>
 
+$$
+\text{IoU}_q(\mathbf{C}) = \frac{|t_e \cap t_r|}{|t_e| + |t_r| - |t_e \cap t_r|}
+$$
+
+
 
 Donde:
 - \( t_e \): conjunto de tokens esperados o relevantes (ground truth).
