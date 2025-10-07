@@ -140,6 +140,9 @@ Interpretación:  mide cuántos de los tokens relevantes fueron efectivamente re
 ## Resultados
 
 
-![Texto alternativo](IOU.png)
+<p align="center">
+  <img src="IOU.png" alt="Gráfico IoU" width="400">
+</p>
+
 ![Texto alternativo](Precission.png)
 ![Texto alternativo](Recall.png)
