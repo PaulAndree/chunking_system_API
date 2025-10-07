@@ -5,7 +5,7 @@ Esta API desarrollada con FastApi expone un endpoint "/process_doc" el cual es c
 
 ```python
 splitter_pdf = RollingWindowSplitter(
-    encoder=encoder,
+    encoder=encoder, #intfloat/multilingual-e5-large
     dynamic_threshold=True,
     min_split_tokens=150,
     max_split_tokens=300,
