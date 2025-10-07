@@ -99,5 +99,32 @@ c) Las copias en soporte papel de documentos electrónicos requerirán que en la
 ## MÉTRICAS
 
 
+### IOU
+
 Para una consulta relacionada a un corpus específico, solo un subconjunto de tokens dentro de ese corpus será relevante. Idealmente, un sistema de recuperación debería recuperar exactamente y únicamente los tokens relevantes para cada consulta en todo el corpus. 
 La metrica Intersección sobre Unión (IoU) es una métrica que considera no solo si se recuperan fragmentos relevantes, sino también cuántos tokens irrelevantes, redundantes o distractores se recuperan.
+
+\[
+\text{IoU}_q(\mathbf{C}) = \frac{|t_e \cap t_r|}{|t_e| + |t_r| - |t_e \cap t_r|}
+\]
+
+Donde:
+- \( t_e \): conjunto de tokens esperados o relevantes (ground truth).
+- \( t_r \): conjunto de tokens recuperados por el sistema.
+- \( q_i \): query
+- \( C \): Chunked corpus
+
+Interpretación:   Si el sistema recupera exactamente los mismos tokens que los relevantes → IoU = 1. Si no hay solapamiento → IoU = 0
+
+### Precision
+
+\[
+\text{Precision}_q(\mathbf{C}) = \frac{|t_e \cap t_r|}{|t_r|}
+\]
+
+
+### Recall
+
+\[
+\text{IoU}_q(\mathbf{C}) = \frac{|t_e \cap t_r|}{|t_e|}
+\]
