@@ -108,7 +108,6 @@ La metrica Intersección sobre Unión (IoU) es una métrica que considera no sol
   IoU<sub>q</sub>(𝐂) = |t<sub>e</sub> ∩ t<sub>r</sub>| / (|t<sub>e</sub>| + |t<sub>r</sub>| − |t<sub>e</sub> ∩ t<sub>r</sub>|)
 </p>
 
-IoU_q(C) = |t_e ∩ t_r| / (|t_e| + |t_r| - |t_e ∩ t_r|)
 
 Donde:
 - \( t_e \): conjunto de tokens esperados o relevantes (ground truth).
@@ -120,13 +119,13 @@ Interpretación:   Si el sistema recupera exactamente los mismos tokens que los 
 
 ### Precision
 
-\[
-\text{Precision}_q(\mathbf{C}) = \frac{|t_e \cap t_r|}{|t_r|}
-\]
+<p align="center">
+  Precision<sub>q</sub>(𝐂) = |t<sub>e</sub> ∩ t<sub>r</sub>| / (|t<sub>r</sub>|)
+</p>
 
 
 ### Recall
 
-\[
-\text{IoU}_q(\mathbf{C}) = \frac{|t_e \cap t_r|}{|t_e|}
-\]
+<p align="center">
+  Recall<sub>q</sub>(𝐂) = |t<sub>e</sub> ∩ t<sub>r</sub>| / (|t<sub>e</sub>|)
+</p>
