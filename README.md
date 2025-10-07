@@ -124,9 +124,18 @@ $$
 \text{Precision}_q(\mathbf{C}) = \frac{|t_e \cap t_r|}{ |t_r| }
 $$
 
+Interpretación: mide cuántos de los tokens recuperados eran realmente relevantes. (se ven cuanto ruido o falsos positivos hay en la recuperacion).
+
 
 ### Recall
 
 $$
 \text{Recall}_q(\mathbf{C}) = \frac{|t_e \cap t_r|}{ |t_e| }
 $$
+
+Interpretación:  mide cuántos de los tokens relevantes fueron efectivamente recuperados.
+
+
+
+## Resultados
+
